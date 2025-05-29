@@ -1,0 +1,249 @@
+/* Reset básico para remover margens/padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de fonte base e cores padrão */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;  /* texto em cinza-escuro para boa leitura */
+  background-color: #fff;
+}
+
+/* Links padrão no corpo do texto */
+a {
+  text-decoration: none;
+  color: inherit;  /* herda a cor do texto (poderá ser alterado em contextos específicos) */
+}
+
+/* Estilos do menu de navegação */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;         /* fundo cinza-escuro do menu */
+  color: #fff;                    /* textos/ícones brancos no menu */
+  z-index: 1000;                  /* fica sobreposto aos demais elementos */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombra para destaque */
+}
+
+/* Container interno do nav, limita largura e alinha conteúdo */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* permite quebrar linha em telas pequenas quando menu expandir */
+}
+
+/* Logo/nome da empresa no nav */
+.logo {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Estilo da lista de links do menu (versão desktop) */
+.nav-links {
+  list-style: none;
+  display: flex;  /* itens lado a lado */
+  align-items: center;
+}
+
+/* Links individuais do menu */
+.nav-links li {
+  margin: 0 15px;
+}
+
+/* Estilo dos <a> no menu */
+.nav-links a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ddd;  /* pequeno destaque ao passar mouse */
+}
+
+/* Ícones de redes sociais no nav */
+.social-links a {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #ddd;
+}
+
+/* Botão "hambúrguer" - escondido por padrão (mostrado via media query em mobile) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* ---------- Estilos das seções de conteúdo ---------- */
+
+/* Espaçamento e largura padrão para seções */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  /* scroll-margin-top deixa a âncora visível abaixo do menu fixo */
+  scroll-margin-top: 80px;
+}
+
+/* Títulos das seções */
+section h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Seção Sobre Nós (primeira seção) estilos especiais */
+#sobre-nos {
+  text-align: center;  /* centraliza texto para destaque */
+}
+#sobre-nos h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+#sobre-nos p {
+  font-size: 1.0em;
+  /* margem inferior para espaçar do próximo elemento */
+  margin-bottom: 0;
+}
+
+/* Parágrafo das seções (ajuste geral se necessário) */
+section p {
+  font-size: 1em;
+  color: #555;
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* Lista de serviços na seção Serviços */
+.services-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.services-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+.services-list i {
+  color: #333;
+  margin-right: 8px;
+}
+
+/* Formulário de contato */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+/* Label acima do input */
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+/* Campos de input do formulário */
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;  /* herda fonte do body (Open Sans) */
+}
+/* Estilo do botão Enviar */
+.submit-btn {
+  background-color: #28a745;  /* verde (pode usar cor da identidade, aqui usamos similar ao WhatsApp) */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  background-color: #218838; /* verde escuro ao passar mouse */
+}
+
+/* ---------- Botão WhatsApp flutuante ---------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* cor oficial do WhatsApp */
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;  /* alinha o ícone verticalmente */
+  font-size: 1.8em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1001;  /* acima do menu, se necessário */
+}
+.whatsapp-float:hover {
+  background-color: #1EBE54; /* leve mudança no hover */
+}
+
+/* ---------- Estilos responsivos (mobile) ---------- */
+
+/* Em telas menores (até 768px de largura) */
+@media (max-width: 768px) {
+  /* Esconde os links do menu e as redes sociais, mostra o botão hamburger */
+  .nav-links {
+    display: none;  /* menu oculto inicialmente (mostrar via .active quando clicado) */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-links.active {
+    display: flex;   /* mostra menu quando ativo */
+  }
+  .nav-links li {
+    margin: 15px 0;
+  }
+  .social-links {
+    display: none;   /* oculta ícones sociais para ganhar espaço em mobile */
+  }
+  .hamburger {
+    display: inline-block;  /* mostra botão hamburger */
+  }
+  /* Ajusta o container do nav para garantir espaçamento quando menu aparece */
+  .nav-container {
+    padding: 10px 20px 15px 20px;
+  }
+}
+
+/* Alterna cor de fundo entre seções pares e ímpares para destacar */
+section:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+section:nth-of-type(odd) {
+  background-color: #ffffff;
+}

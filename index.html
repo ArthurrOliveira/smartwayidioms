@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartWay Idioms - Curso de Inglês</title>
+  <!-- Link para o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Importa Google Font (Open Sans) para uma tipografia moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
+  <!-- Importa Font Awesome (CDN) para usar ícones de redes sociais e WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-oS3vJWv+0UjzB4x8EZ+6LNf5dx/z7Zj5qj1Gh5z4Xmr3tpBesN4Pe1Z5W30+N9v3" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Navegação fixa no topo -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo/nome da empresa -->
+      <a href="#" class="logo">SmartWay Idioms</a>
+      <!-- Links do menu (âncoras para seções da página) -->
+      <ul class="nav-links">
+        <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+      </ul>
+      <!-- Ícones de redes sociais -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/smartwayidioms?locale=pt_BR" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/smartwayidioms/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!-- Botão "hambúrguer" para menu mobile -->
+      <button class="hamburger" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre-nos">
+    <!-- Título principal com o nome da empresa -->
+    <h1>SmartWay Idioms</h1>
+    <!-- Conteúdo sobre a empresa -->
+    <p>Há mais de 10 anos no mercado, a SmartWay Idioms é especializada no ensino de língua inglesa, oferecendo aulas com professores nativos. Seus cursos são personalizados, focados nos objetivos a serem alcançados pelo aluno.</p>
+  </section>
+
+  <!-- Seção Metodologia -->
+  <section id="metodologia">
+    <h2>Metodologia</h2>
+    <p>Desenvolver as habilidades de comunicação em inglês com foco nas necessidades individuais dos alunos (viagens, trabalho, certificações, conversação etc.)</p>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <!-- Lista de serviços oferecidos -->
+    <ul class="services-list">
+      <li><i class="fas fa-user"></i> Aulas individuais</li>
+      <li><i class="fas fa-users"></i> Aulas em grupo</li>
+    </ul>
+  </section>
+
+  <!-- Seção Fale Conosco (formulário de contato) -->
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form id="contact-form">
+      <!-- Campo Nome -->
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
+      <!-- Campo E-mail -->
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <!-- Campo Telefone -->
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
+      </div>
+      <!-- Botão de envio -->
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5521981616840" class="whatsapp-float" target="_blank" title="Fale conosco via WhatsApp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Importa o script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
