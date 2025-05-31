@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 /* extras globais que você mantém */
-html, body {
+html,
+body {
   @apply scroll-smooth;
 }
 

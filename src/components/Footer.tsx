@@ -1,21 +1,32 @@
+import { Instagram, Facebook } from "lucide-react";
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-white py-10">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-6">
-        <div>
-          <h4 className="font-bold text-xl mb-2">SmartWay Idioms</h4>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
+        {/* Marca e direitos */}
+        <div className="text-center md:text-left">
+          <h4 className="text-xl font-bold mb-2">SmartWay Idioms</h4>
           <p>© {new Date().getFullYear()} — Todos os direitos reservados.</p>
         </div>
 
-        <div className="flex gap-4">
-          <a href="https://instagram.com" aria-label="Instagram" className="hover:opacity-80">
-            {/* Lucide / HeroIcons ou SVG próprio */}
-            <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+        {/* Ícones de redes */}
+        <nav className="flex gap-6">
+          <a
+            href="https://instagram.com"
+            aria-label="Instagram"
+            className="hover:opacity-80"
+          >
+            <Instagram className="w-6 h-6" />
           </a>
-          <a href="https://facebook.com" aria-label="Facebook" className="hover:opacity-80">
-            <svg width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10" /></svg>
+          <a
+            href="https://facebook.com"
+            aria-label="Facebook"
+            className="hover:opacity-80"
+          >
+            <Facebook className="w-6 h-6" />
           </a>
-        </div>
+        </nav>
       </div>
     </footer>
   );

@@ -1,12 +1,12 @@
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 px-4">
         {/* Imagem ilustrativa */}
         <img
-          src="/about.jpg"  /* coloque uma imagem em public/about.jpg */
+          src="/about.jpg" /* coloque uma imagem em public/about.jpg */
           alt="Professor ensinando online"
-          className="rounded-2xl shadow-lg object-cover w-full h-64 md:h-auto"
+          className="w-full h-64 md:h-auto object-cover rounded-2xl shadow-lg"
         />
 
         {/* Texto */}
