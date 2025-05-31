@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-primary text-white sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <header className="bg-light text-dark sticky top-0 z-50 shadow-sm">
+      <div className="w-full flex items-center justify-between p-6">
         {/* Logo */}
         <a href="#hero" className="text-lg font-bold">
-          SmartWay Idioms
+          <span className="text-primary">SmartWay Idioms</span> 
         </a>
 
         {/* Botão hamburger (mobile) */}
@@ -18,21 +17,23 @@ export default function Header() {
         </button>
 
         {/* Navegação */}
-        <nav
-          className={`${
-            open ? "flex" : "hidden"
-          } flex-col md:flex md:flex-row gap-6`}
+  <nav
+  className={`${
+    open ? 'flex' : 'hidden'
+  } flex-col md:flex md:flex-row gap-6
+             items-center justify-center text-center
+             font-semibold md:mx-auto`}
         >
-          <a href="#about" className="hover:underline">
+          <a href="#about" className="hover:text-primary">
             Sobre
           </a>
-          <a href="#courses" className="hover:underline">
+          <a href="#courses" className="hover:text-primary">
             Cursos
           </a>
-          <a href="#testimonials" className="hover:underline">
+          <a href="#testimonials" className="hover:text-primary">
             Depoimentos
           </a>
-          <a href="#contact" className="hover:underline">
+          <a href="#contact" className="hover:text-primary">
             Contato
           </a>
         </nav>

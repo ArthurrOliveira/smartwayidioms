@@ -1,8 +1,8 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-10">
+    <footer className="bg-dark text-light py-10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
         {/* Marca e direitos */}
         <div className="text-center md:text-left">
@@ -10,19 +10,20 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} — Todos os direitos reservados.</p>
         </div>
 
-        {/* Ícones de redes */}
+        {/* Ícones de redes sociais */}
         <nav className="flex gap-6">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/smartwayidioms"
             aria-label="Instagram"
-            className="hover:opacity-80"
+            className="hover:text-accent transition-colors"
           >
             <Instagram className="w-6 h-6" />
           </a>
+
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/smartwayidioms"
             aria-label="Facebook"
-            className="hover:opacity-80"
+            className="hover:text-accent transition-colors"
           >
             <Facebook className="w-6 h-6" />
           </a>

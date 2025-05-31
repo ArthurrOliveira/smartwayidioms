@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 px-4">
         {/* Imagem ilustrativa */}
         <img
-          src="/about.jpg" /* coloque uma imagem em public/about.jpg */
+          src="/incompany.jpg" /* coloque uma imagem em public/about.jpg */
           alt="Professor ensinando online"
           className="w-full h-64 md:h-auto object-cover rounded-2xl shadow-lg"
         />

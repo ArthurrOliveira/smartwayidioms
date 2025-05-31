@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1845AC",
-        secondary: "#FF9900",
-      },
+    primary:  '#C8102E',   // vermelho SmartWay
+    accent:   '#D4AF37',   // dourado
+    light:    '#FFFFFF',   // branco de conveniência
+    dark:     '#000000',   // preto 
+  },
       fontFamily: {
         sans: ['"Open Sans"', "sans-serif"],
       },
