@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import CoursesSection from "./components/CoursesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import WhatsAppButton from './components/WhatsAppButton'; //import do botão de whatsapp
 import Footer from "./components/Footer";
 import "./index.css"; // Tailwind
 
@@ -14,6 +15,7 @@ export default function App() {
       <AboutSection />
       <CoursesSection />
       <TestimonialsSection />
+      <WhatsAppButton />
       <Footer />
     </>
   );
