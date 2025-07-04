@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Mariana Alves",
     quote:
-      "A plataforma online é muito prática; faço aula no horário do almoço.",
+      "As aulas online são muito práticas; faço aula no horário do almoço.",
   },
 ];
 
