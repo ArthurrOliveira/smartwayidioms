@@ -1,3 +1,4 @@
+// src/components/HeroSection.tsx
 export default function HeroSection() {
   return (
     <section
@@ -9,23 +10,36 @@ export default function HeroSection() {
       {/* === TEXTO === */}
       <div className="max-w-xl text-center md:text-left space-y-6">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-          Aprenda inglês on-line<br />
+          Aprenda inglês on-line <br />
           com professores nativos
         </h1>
 
         <p className="text-lg md:text-xl text-light/90">
-          Aulas 100 % conversação, turmas reduzidas e horários flexíveis.
+          Aulas com foco em conversação, turmas reduzidas e horários flexíveis.
         </p>
 
-        {/* === BOTÃO === */}
-        <a
-          href="#courses"
-          className="inline-block bg-light text-primary border-2 border-accent
-                     font-semibold py-3 px-8 rounded-full shadow-md
-                     transition-colors hover:bg-accent hover:text-light"
-        >
-          Conheça nossos cursos
-        </a>
+        {/* === BOTÕES === */}
+        <div className="flex flex-col sm:flex-row gap-y-4 gap-x-6">
+          {/* Botão WhatsApp */}
+          <a
+            href="https://wa.me/5521981616840"
+            className="inline-block bg-light text-primary border-2 border-accent
+                       font-semibold py-3 px-8 rounded-full shadow-md
+                       transition-colors hover:bg-accent hover:text-light"
+          >
+            Agende sua aula experimental
+          </a>
+
+          {/* Botão Saiba Mais */}
+          <a
+            href="#about"
+            className="inline-block border-2 border-white text-light
+                       font-semibold py-3 px-8 rounded-full transition-colors
+                       hover:bg-white hover:text-primary"
+          >
+            Saiba mais
+          </a>
+        </div>
       </div>
 
       {/* === IMAGEM === */}
