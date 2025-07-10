@@ -46,7 +46,7 @@ export default function HeroSection() {
       <img
         src="logosemfundo.png"
         alt="Aluno estudando inglês on-line"
-        className="w-full md:w-1/2 h-64 md:h-[380px] object-contain rounded-2xl shadow-lg"
+        className="w-full md:w-1/2 h-64 md:h-[380px] object-contain rounded-2xl"
       />
     </section>
   );
