@@ -9,7 +9,7 @@ import React from 'react';
 const WhatsAppButton: React.FC = () => {
   return (
     <a 
-      href="https://wa.me/5521981616840" 
+      href="https://wa.me/5521981616840?text=Olá,%20gostaria%20de%20informações%20sobre%20o%20curso%20de%20inglês%20da%20SmartWay%20Idioms"
       target="_blank" 
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg 
