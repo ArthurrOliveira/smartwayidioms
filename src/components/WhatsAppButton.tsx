@@ -29,7 +29,7 @@ const WhatsAppButton: React.FC = () => {
       <img 
         src="/whatsappbutton.svg" 
         alt="WhatsApp" 
-        className="w-8 h-8"
+        className="w-16 h-16"
         /*
           Aqui usamos uma imagem do ícone do WhatsApp.
           - w-8 h-8: define largura e altura do ícone (2rem, aproximadamente 32px).

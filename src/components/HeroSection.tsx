@@ -8,7 +8,7 @@ export default function HeroSection() {
                  bg-primary text-light min-h-[85vh] px-4 gap-8"
     >
       {/* === TEXTO === */}
-      <div className="max-w-xl text-center md:text-left space-y-6">
+      <div className="order-2 md:order-1 max-w-xl text-center md:text-left space-y-6">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
           Aprenda inglês on-line <br />
           com professores nativos
@@ -46,7 +46,7 @@ export default function HeroSection() {
       <img
         src="logosemfundo.png"
         alt="Aluno estudando inglês on-line"
-        className="w-full md:w-1/2 h-64 md:h-[380px] object-contain rounded-2xl"
+        className="order-1 md:order-1 w-full md:w-1/2 h-64 md:h-[380px] object-contain rounded-2xl"
       />
     </section>
   );
